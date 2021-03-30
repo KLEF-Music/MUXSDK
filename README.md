@@ -1,3 +1,3 @@
-# MyLibrary
+# MUX SDK
 
-A description of this package.
+Host SDK as SPM package not available.

@@ -5,28 +5,20 @@ import PackageDescription
 
 let package = Package(
     name: "MUXSDK",
-    platforms: [
-        .iOS(.v13)
-    ],
     products: [
         .library(
             name: "MUXSDK",
-            targets: ["MUXSDK"]
+            targets: ["MuxCore", "MUXSDKStats"]
         )
     ],
-    dependencies: [],
     targets: [
-        .target(
-            name: "MUXSDK",
-            dependencies: []
-        ),
         .binaryTarget(
             name: "MuxCore",
-            path: "Sources/MUXSDK/MuxCore.xcframework"
+            path: "MuxCore.xcframework"
         ),
         .binaryTarget(
             name: "MUXSDKStats",
-            path: "Sources/MUXSDK/MUXSDKStats.xcframework"
+            path: "MUXSDKStats.xcframework"
         ),
     ]
 )

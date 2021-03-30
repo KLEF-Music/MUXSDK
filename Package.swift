@@ -14,11 +14,11 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MuxCore",
-            path: "MuxCore.xcframework"
+            path: "Sources/MUXSDK/MuxCore.xcframework"
         ),
         .binaryTarget(
             name: "MUXSDKStats",
-            path: "MUXSDKStats.xcframework"
+            path: "Sources/MUXSDK/MUXSDKStats.xcframework"
         ),
     ]
 )

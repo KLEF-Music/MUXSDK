@@ -11,14 +11,21 @@ let package = Package(
     products: [
         .library(
             name: "MUXSDK",
-            targets: ["MUXSDK"]),
+            targets: ["MUXSDK"])
     ],
     dependencies: [],
     targets: [
-        .binaryTarget(
+        .target(
             name: "MUXSDK",
-            path: "Sources/MUXSDK/MUX.zip",
-            checksum: "2e7cb5ec68106f5f8de7e509d94830bcf18a98592cd3217b74ccb08f2c7d3a5c"
+            dependencies: ["MuxCore", "MUXSDKStats"]
+        ),
+        .binaryTarget(
+            name: "MuxCore",
+            path: "Sources/MUXSDK/MuxCore.xcframework"
+        ),
+        .binaryTarget(
+            name: "MUXSDKStats",
+            path: "Sources/MUXSDK/MUXSDKStats.xcframework"
         ),
     ]
 )

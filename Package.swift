@@ -17,7 +17,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MUXSDK",
-            url: "https://github.com/garynewby/MUXSDK/releases/download/1.0.0/MUX.zip",
+            path: "Sources/MUXSDK/MUX.zip",
             checksum: "2e7cb5ec68106f5f8de7e509d94830bcf18a98592cd3217b74ccb08f2c7d3a5c"
         ),
     ]
